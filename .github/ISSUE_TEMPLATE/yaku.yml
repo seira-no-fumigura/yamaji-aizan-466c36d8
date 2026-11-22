@@ -1,0 +1,28 @@
+name: 現代語訳の誤り
+description: 現代語訳の誤りや、よりよい現代語訳を知らせる
+title: "[訳] 現代日本文學大系 6 北村透谷・山路愛山集 "
+labels: ["訳"]
+body:
+  - type: input
+    id: block
+    attributes:
+      label: 段落ID
+      description: "行頭にある ID（例: yamaji-aizan-466c36d8-000001）"
+    validations:
+      required: true
+  - type: textarea
+    id: before
+    attributes:
+      label: いまの現代語訳
+    validations:
+      required: true
+  - type: textarea
+    id: after
+    attributes:
+      label: 直した現代語訳
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 理由・根拠
